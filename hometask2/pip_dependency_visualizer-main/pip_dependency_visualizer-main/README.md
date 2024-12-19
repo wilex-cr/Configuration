@@ -23,7 +23,7 @@
 
 1. Клонировать этот репозиторий:
     ```bash
-    git clone https://github.com/wilex/pip_dependency_visualizer.git
+    git clone https://github.com/wilex-cr/pip_dependency_visualizer.git
     ```
 2. Перейдите в каталог проекта:
     ```bash

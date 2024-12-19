@@ -1,18 +1,18 @@
 # UnixShellEmulator
  
-This project provides a basic Unix shell emulator that operates on a tar archive as a virtual filesystem.
+Этот проект предоставляет базовый эмулятор оболочки Unix, который работает с архивом tar как с виртуальной файловой системой.
 
 ## Features
 
-* Emulates basic Unix commands: `ls`, `cd`, `pwd`, `exit`, `history`.
-* Operates on a tar archive without unpacking.
-* Customizable username and computer name in the prompt.
-* Logging of commands with timestamps and username.
-* Support for executing a startup script.
+* Эмулирует основные команды Unix: `ls`, `cd`, `pwd`, `exit`, `history`.
+* Работает с архивом tar без распаковки.
+* Настраиваемое имя пользователя и название компьютера в командной строке.
+* Запись команд в журнал с указанием временных меток и имени пользователя.
+* Поддержка выполнения сценария запуска.
 
-## Usage
+## Использование
 
-To run the emulator, use the following command:
+Чтобы запустить эмулятор, используйте следующую команду:
 
 ```bash
 python emulator.py -u [username] -c [computername] [filesystem.tar] -l [logfile.csv] -s [script.txt]
@@ -30,26 +30,34 @@ python emulator.py -u [username] -c [computername] [filesystem.tar] -l [logfile.
 python emulator.py -u myuser -c mycomputer myfilesystem.tar -l mylog.csv -s myscript.txt 
 ```
 
-## Docker Usage
+## Использование Docker
 
-You can easily run the UnixShellEmulator using Docker. This allows for a consistent environment without needing to install dependencies on your local machine.
+Вы можете легко запустить эмулятор оболочки Unix с помощью Docker. Это позволяет создать согласованную среду без необходимости устанавливать зависимости на вашем локальном компьютере.
 
-### Prerequisites
+### Необходимые компоненты
 
-- Install Docker on your system. Follow the instructions at [Docker Installation](https://docs.docker.com/get-docker/).
+- Установите Docker в свою систему. Следуйте инструкциям в разделе [Установка Docker].(https://docs.docker.com/get-docker/).
 
-### Build the Docker Image
+### Создайте образ Docker
 
-Navigate to the project directory where your `Dockerfile` is located, and build the Docker image with the following command:
+Перейдите в каталог проекта, в котором находится ваш `Dockerfile` находится, и создайте образ Docker с помощью следующей команды:
 
 ```bash
 docker build -t unixshell-emulator .
 ```
 
-### Run the Emulator
+### Запуск программы
 
-To run the emulator, you can mount a local directory containing your tar archive and log file. Use the following command:
+Чтобы запустить эмулятор, вы можете подключить локальный каталог, содержащий ваш архив tar и файл журнала. Используйте следующую команду:
 
 ```bash
 docker run -it --rm -v /path/to/local/directory:/app/data unixshell-emulator /app/data/filesystem.tar -u [username] -c [computername] -l /app/data/logfile.csv -s /app/data/script.txt
 ```
+
+### Пример работы программы
+
+![image]()
+
+### Пример работы тестов
+
+![image]()

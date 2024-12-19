@@ -1,41 +1,42 @@
 # Python Package Dependency Graph Visualizer
 
-Visualizing Python package dependencies, including transitive dependencies, using PlantUML
+Визуализация зависимостей пакетов Python, включая транзитивные зависимости, с использованием PlantUML
 
-## Features
+## Возможности 
 
-* Recursively explores package dependencies up to a configurable depth.
-* Generates a PlantUML script representing the dependency graph.
-* Saves the dependency graph image in a configurable location.
-* Supports visualization using a user-specified PlantUML jar file.
-* Configuration via a TOML file.
-* Supports Python 3.7+
+* Рекурсивно исследует зависимости пакетов с з
+аданной глубиной.
+* Создает скрипт PlantUML, представляющий график зависимостей.
+* Сохраняет изображение графика зависимостей в заданном местоположении.
+* Поддерживает визуализацию с использованием заданного пользователем файла PlantUML jar.
+* Настройка с помощью файла TOML.
+* Поддерживает Python 3.7+
+  
+## Требования
 
-## Prerequisites
+* Python 3.7 или более поздней версии
+* `pip` установлен и доступен в вашем PATH.
+* JAR-файл PlantUML (например, `plantuml.jar`). Вы можете загрузить его с [веб-сайта PlantUML](http://plantuml.com/download).
+* Java установлена и доступна в вашем PATH (требуется для запуска PlantUML jar).
 
-*   Python 3.7 or later
-*   `pip` installed and accessible in your PATH.
-*   PlantUML jar file (e.g., `plantuml.jar`). You can download it from the [PlantUML website](https://plantuml.com/download).
-*   Java installed and accessible in your PATH (required to run the PlantUML jar).
+## Скачивание
 
-## Installation
-
-1. Clone this repository:
+1. Клонировать этот репозиторий:
     ```bash
     git clone https://github.com/wilex/pip_dependency_visualizer.git
     ```
-2. Navigate to the project directory:
+2. Перейдите в каталог проекта:
     ```bash
     cd pip_dependency_visualizer
     ```
-3. Install required Python packages:
+3. Установите необходимые пакеты Python:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Configuration
+## Настройка
 
-Create a `config.toml` file in the project root directory with the following structure:
+Создайте файл `config.toml` в корневом каталоге проекта со следующей структурой:
 
 ```toml
 [config]
@@ -45,21 +46,21 @@ repository_url = "url-to-repository"
 graph_image_path = "dependency_graph.png"  # Path to the output graph image
 ```
 
-Replace `"your-package-name"` with the name of the pip package you want to analyze, `"path/to/plantuml.jar"` with the actual path to your PlantUML jar file, and `"dependency_graph.png"` with the desired output image path.
+Замените ""your-package-name"" на имя пакета pip, который вы хотите проанализировать, ""path/to/plantuml.jar"" - на фактический путь к вашему jar-файлу PlantUML, а ""dependency_graph.png"" - на желаемый путь к выходному изображению.
 
-## Usage
+## Использование
 
-Run the script:
+Запуск приложения:
 
 ```bash
 python .\src\dependency_visualizer.py
 ```
 
-This will generate a `dependency_graph.puml` file and an image file (e.g., `dependency_graph.png`) in the specified location.
+Это приведет к созданию файла dependency_graph.pom и файла изображения (например, dependency_graph.png) в указанном расположении.
 
-## Example
+## Пример
 
-To visualize the dependencies of the `requests` package, update your `config.toml` as follows:
+Чтобы наглядно представить зависимости пакета "запросы", обновите свой файл "config.toml" следующим образом:
 
 ```toml
 [config]

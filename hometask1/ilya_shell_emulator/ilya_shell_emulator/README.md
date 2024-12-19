@@ -56,7 +56,7 @@ docker run -it --rm -v /path/to/local/directory:/app/data unixshell-emulator /ap
 
 ### Пример работы программы
 
-![image]()
+![image](https://github.com/wilex-cr/Configuration/blob/main/hometask1/ilya_shell_emulator/ilya_shell_emulator/run_program.jpg)
 
 ### Пример работы тестов
 

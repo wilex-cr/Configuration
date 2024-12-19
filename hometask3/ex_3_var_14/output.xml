@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config>
+  <global name="pi" value="3.14"/>
+  <global name="max_value" value="100"/>
+  <config name="settings">
+    <settings>
+      <resolution>1920x1080</resolution>
+      <fullscreen>true</fullscreen>
+      <volume>75</volume>
+    </settings>
+  </config>
+  <config name="config">
+    <settings>
+      <name>"GameConfig"</name>
+      <settings>settings</settings>
+      <max_value>$(max_value)</max_value>
+    </settings>
+  </config>
+</config>

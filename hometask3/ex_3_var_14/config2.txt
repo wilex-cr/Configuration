@@ -1,0 +1,4 @@
+global ip = "192.168.0.1"
+global port = 8080
+network = [ip: $(ip), port: $(port), protocol: "TCP"]
+config = [name: "NetworkSettings", network: network]

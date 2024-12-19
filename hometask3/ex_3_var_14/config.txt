@@ -1,0 +1,4 @@
+global pi = 3.14
+                        global max_value = 100
+                        settings = [resolution: 1920x1080, fullscreen: true, volume: 75]
+                        config = [name: "GameConfig", settings: settings, max_value: $(max_value)]

@@ -72,5 +72,5 @@ graph_image_path = "requests_dependencies.png"
 
 ### Пример работы программы
 
-![image]()
+![image](https://github.com/wilex-cr/Configuration/blob/main/hometask2/pip_dependency_visualizer-main/pip_dependency_visualizer-main/run_program2.png)
 

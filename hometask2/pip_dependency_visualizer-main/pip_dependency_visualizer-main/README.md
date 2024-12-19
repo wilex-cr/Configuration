@@ -69,3 +69,8 @@ package_name = "requests"
 repository_url = "https://github.com/psf/requests"
 graph_image_path = "requests_dependencies.png"
 ```
+
+### Пример работы программы
+
+![image]()
+

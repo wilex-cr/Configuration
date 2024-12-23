@@ -74,3 +74,6 @@ graph_image_path = "requests_dependencies.png"
 
 ![image](https://github.com/wilex-cr/Configuration/blob/main/hometask2/pip_dependency_visualizer-main/pip_dependency_visualizer-main/run_program2.png)
 
+### Прогон тестов
+
+![image](https://github.com/wilex-cr/Configuration/blob/main/hometask2/pip_dependency_visualizer-main/pip_dependency_visualizer-main/run_test2.png)
